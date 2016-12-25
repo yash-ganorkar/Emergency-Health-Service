@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spatil32.emergency_health_services.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Registration"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblFormName"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtHospitalName"
+            android:hint="@string/HospitalName"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@id/lblFormName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/HospitalAddress"
+            android:id="@+id/txtHospitalAddress"
+            android:textSize="20dp"
+            android:layout_below="@id/txtHospitalName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDoctorName"
+            android:hint="@string/DoctorName"
+            android:textSize="20dp"
+            android:layout_below="@id/txtHospitalAddress"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSSN"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textSize="20dp"
+            android:hint="@string/SSN"
+            android:layout_below="@id/txtDoctorName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"
+            android:textSize="20dp"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/txtSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            android:textSize="20dp"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtConfirmPassword"
+            android:textSize="20dp"
+            android:hint="@string/ConfirmPassword2"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContact"
+            android:maxLength="10"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:hint="@string/Phone"
+            android:layout_below="@id/txtConfirmPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="10dp"
+            android:textColor="#5b5dc9"
+            android:layout_below="@id/txtContact"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:textColor="#5b5dc9"
+            android:id="@+id/btnCancel"
+            android:layout_below="@id/txtContact"
+            android:layout_toRightOf="@id/btnRegister"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Health Services"
+            android:textStyle="italic"
+            android:layout_below="@id/btnCancel"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ff0000"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.spatil32.emergency_health_services.PatientRegistrationActivity">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblFormName"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evFirstName"
+            android:hint="@string/pateintFName"
+            android:textSize="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_below="@id/lblFormName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pateintLName"
+            android:id="@+id/evLastName"
+            android:textSize="20dp"
+            android:layout_below="@id/evFirstName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evSSN"
+            android:maxLength="9"
+            android:inputType="number"
+            android:hint="@string/pateintSSN"
+            android:textSize="20dp"
+            android:layout_below="@id/evLastName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evEmail"
+            android:textSize="20dp"
+            android:hint="@string/pateintEmail"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/evSSN"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evContact"
+            android:maxLength="10"
+            android:textSize="20dp"
+            android:hint="@string/pateintPhone"
+            android:inputType="phone"
+            android:layout_below="@id/evEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:id="@+id/evEmgContact"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:hint="@string/pateintEmergencyContact"
+            android:layout_below="@id/evContact"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evPassword"
+            android:textSize="20dp"
+            android:hint="@string/pateintPassword"
+            android:inputType="textPassword"
+            android:layout_below="@id/evEmgContact"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evConfirmPassword"
+            android:textSize="20dp"
+            android:hint="@string/ConfirmPassword"
+            android:inputType="textPassword"
+            android:layout_below="@id/evPassword"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:id="@+id/bRegister"
+            android:layout_marginTop="10dp"
+            android:textColor="#5b5dc9"
+            android:layout_below="@id/evConfirmPassword"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:textColor="#5b5dc9"
+            android:id="@+id/bCancel"
+            android:layout_below="@id/evConfirmPassword"
+            android:layout_toRightOf="@id/bRegister"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons"
+            android:enabled="true"
+            android:clickable="true" />
+    </RelativeLayout>
+</ScrollView>
